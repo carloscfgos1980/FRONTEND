@@ -1,0 +1,75 @@
+
+$TopColorButtonText:#fff;
+$ButtonColor:#686de0;
+$BackgroundColor: #c3cfe2;
+
+@mixin SizeColor ($size, $color){
+    color: $color;
+    font-size: $size;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+body{
+    background-color: $BackgroundColor;
+   
+}
+.testimony{
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .top{
+        border-radius: 10% 10% 0 0;
+        height: 430px;
+        background-color: $TopColorButtonText;
+        margin: 10px 20px 0px 20px;
+        text-align: center;
+        p{
+            font-size: 3ch;
+            padding: 10%;
+            text-align: justify;
+            text-justify: inter-word;
+            line-height: 1.6;
+        }
+        img{
+            height: auto;
+            width: 140px;
+            border-radius: 90%;
+            border: 6px white solid;
+            position: relative;
+            top:-50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .button{
+        border-radius: 0 0 10% 10%;
+        background-color: $ButtonColor;
+        margin: 0px 20px 10px 20px;
+        height: 250px;
+        text-align: center;
+        ul{
+           padding-top: 100px;
+            li:nth-child(1){
+                @include SizeColor(3.5ch, $TopColorButtonText);
+              text-transform: uppercase;
+        }
+            li:last-child {
+                @include SizeColor (2.5ch, $BackgroundColor);
+              margin-top: 10px;
+         }   
+    }
+}
+    }
+ 
+
+@media only screen and (min-width: 768px) {
+}
+  @media only screen and (min-width: 1200px) {
+
+  }

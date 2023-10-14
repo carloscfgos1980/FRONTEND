@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+.testimony {
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimony .top {
+  border-radius: 10% 10% 0 0;
+  height: 430px;
+  background-color: #fff;
+  margin: 10px 20px 0px 20px;
+  text-align: center;
+}
+
+.testimony .top p {
+  font-size: 3ch;
+  padding: 10%;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
+}
+
+.testimony .top img {
+  height: auto;
+  width: 140px;
+  border-radius: 90%;
+  border: 6px white solid;
+  position: relative;
+  top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimony .button {
+  border-radius: 0 0 10% 10%;
+  background-color: #686de0;
+  margin: 0px 20px 10px 20px;
+  height: 250px;
+  text-align: center;
+}
+
+.testimony .button ul {
+  padding-top: 100px;
+}
+
+.testimony .button ul li:nth-child(1) {
+  color: #fff;
+  font-size: 3.5ch;
+  text-transform: uppercase;
+}
+
+.testimony .button ul li:last-child {
+  color: #c3cfe2;
+  font-size: 2.5ch;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
