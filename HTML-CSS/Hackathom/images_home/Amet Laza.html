@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/contact.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Amet Laza</title>
+        <link href="./Amet Laza_files/style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+    
+        <header>
+             <img src="./Amet Laza_files/Logo_Amet.jpg">
+                    <div class="navegator">
+                        <nav>
+                            <ul>
+                                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                                <li><a href="http://127.0.0.1:5500/contact.html">Art Work</a></li>
+                                <li><a href="http://127.0.0.1:5500/contact.html">Exbitions</a></li>
+                                <li><a href="http://127.0.0.1:5500/contact.html">About</a></li>
+                                <li><a href="http://127.0.0.1:5500/contact.html">News</a></li>
+                            </ul>
+                       </nav>
+                    </div>
+        </header>
+    <div class="contacth2">
+    <h2>Contact</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Name: <input type="text" name="name"></label>
+            </p>
+            <p>
+                <label>Email: <input type="email" name="email"></label>
+            </p>
+            <p>
+                <label>Cel: <input type="tel" id="phone" name="phone"></label>
+            </p>
+            <p>
+                <label>Age: <input type="number" id="quantity" name="quantity" min="1" max="3"></label>
+            </p>
+            <p>
+                <label>Birthday: <input type="date" id="birthday" name="birthday"></label>
+            </p>
+
+            <!--radio select just one element-->
+
+            <input type="radio" id="html" name="gender" value="Neutral">
+            <label for="html">Neutral</label><br>
+            <input type="radio" id="css" name="gender" value="Femine">
+            <label for="css">Femine</label><br>
+            <input type="radio" id="javascript" name="gender" value="MAsculine">
+            <label for="javascript">Masculine</label><br>
+            <br>
+            <!--Check box--> 
+
+            <input type="checkbox" id="language1" name="language1" value="French">
+            <label for="vehicle1"> French</label><br>
+            <input type="checkbox" id="language2" name="language2" value="Italian">
+            <label for="vehicle2"> Italian</label><br>
+            <input type="checkbox" id="language3" name="language3" value="Spanish">
+            <label for="vehicle3"> Spanish</label><br>
+            <input type="checkbox" id="language4" name="language4" value="Arabic">
+            <label for="vehicle3"> Arabic</label>,<br>
+        <br>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            
+            <p>
+                <label>Biography: <textarea name="Biography"></textarea></label>
+            </p>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+    </div>
+        
+        <footer>
+            
+            
+        </footer>
+    
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+    
+</body></html>

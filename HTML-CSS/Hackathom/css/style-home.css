@@ -1,0 +1,228 @@
+a{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    
+}
+a:hover{
+    color:rgb(175, 95, 49);
+}
+body{
+    background-color: beige;
+    font-family: Georgia;
+    margin: auto;
+    list-style-type: none; /* Remove bullets */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 50px 1fr auto;
+}
+header{
+    margin: 20px 40px;
+    width: 80%;
+    list-style: none;
+    grid-column: span 12;
+    grid-row: 1;
+}
+menu{
+    grid-column: span 12;
+    grid-row: 2;
+}
+.content{
+    grid-column: span 12;
+    grid-row: 3;
+}
+footer{
+    grid-column: span 12;
+    grid-row: 4;
+}
+header img{
+    margin-left: 20px;
+}
+.navegator ul{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 0%;
+}
+.navegator li{
+    border:black 1px solid;
+    background-color: rgb(89, 223, 233);
+    border-radius: 8%;
+    float:left;
+     box-sizing: border-box;
+    margin: 2px;
+    padding: 2px;
+}
+
+.home-body1 img{
+        width: 80%;
+}
+.home-body1 li{
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 2em;
+}
+.home-body1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.home-body2 img{
+    width: 80%;
+}
+.home-body2 li{
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 2em;
+}
+.home-body2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.home-body3 img:nth-child(1){
+    width: 80%;
+    margin-top: 5%;
+}
+.home-body3 img:nth-child(2){
+    width: 80%;
+    margin-top: 5%;
+}
+.home-body3 img:nth-child(3){
+    width: 80%;
+    margin-top: 5%;
+}
+.home-body3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    margin-top: 50px;
+}
+footer a{
+    color:lightblue;
+}
+footer{
+    background-color: rgb(24, 21, 21);
+    color: lightblue;  
+    padding: 5px;
+    margin-top: 5px;  
+}
+.footer-whole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.footer-whole li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.footer-whole h3{
+    text-decoration: underline;
+    text-align: center;
+}
+.findme img{
+    padding: 0 10px;
+}
+
+  /* Media queries*/
+
+  @media screen and (min-width: 1280px) {
+      body{
+          background-color: red;
+      }
+      .home-body1{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 20px 5%;
+        justify-content: space-between;
+      }
+      .home-body2{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 20px 5%;
+      }
+      .home-body3{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .home-body1 img{
+        width: 50%;
+      }
+      .home-body2 img{
+        width: 50%;
+      }
+      .home-body3 img:nth-child(1){
+        width: 33%;
+        margin-top: 5%;
+    }
+    .home-body3 img:nth-child(2){
+        width: 33%;
+        margin-top: 5%;
+    }
+    .home-body3 img:nth-child(3){
+        width: 33%;
+        margin-top: 5%;
+    }
+    .home-body3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        margin: 0 20px;
+        margin-top: 50px;
+    }
+    .content li{
+        font-size: 60px;
+    }
+    body{
+        display: grid;
+        grid-template-columns: 33.3% 1fr 1fr;
+        grid-template-rows: 10% 1fr auto;
+    }
+    .menu{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .footer-whole{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10%;
+    }
+    header {
+        grid-column: span 3;
+    }
+    
+    menu{
+        grid-row: 1;
+        grid-column: 4 / span 7;
+    }
+    .content{
+        grid-row: 2;
+        grid-column: span 12;
+    }
+    footer{
+            grid-row: 3;
+            grid-column: span 12;
+    }
+    .navegator{
+        margin-top: 80px;
+        margin-right: 150px;
+        font-size: 130%;
+    }
+    header img{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+ }
