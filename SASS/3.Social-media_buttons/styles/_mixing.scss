@@ -1,0 +1,46 @@
+
+$BlogColor: #e17b77;
+$facebookColor: #3b5998;
+$twitterColor: #00aced;
+$GitHubColor:  #333;
+$LinkedinColor: #007bb6;
+
+
+
+@mixin Button($background) {
+    background-color: $background;
+    position: relative;
+    right:0;
+    width: 220px;
+    height: 40px;
+    transition: .5s transform ease-out;
+}
+@mixin Icons ($content) {
+    position: absolute;
+    left:10px;
+    top:10px;
+    text-rendering: auto;
+     -webkit-font-smoothing: antialiased;
+     font: var(--fa-font-solid);
+    color: white;
+    content: $content;
+} 
+@mixin ContMes ($background){
+    background-color: $background;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    left: 40px;
+    height: 100%;
+    width: 100px;
+}
+@mixin Message {
+    color: white;
+    font-size: 1.6ch;
+    text-decoration: underline;
+    text-align:left;
+    line-height: 35px;
+    height: 100%;
+    width: 150px;
+    padding:0 50px;
+}

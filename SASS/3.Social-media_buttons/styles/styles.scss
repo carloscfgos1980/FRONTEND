@@ -1,0 +1,97 @@
+
+
+@import "./mixing";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: green;
+}
+.nav{
+    position:relative;
+    right: -1500px;
+    top: 350px;
+    .blog{
+        @include Button($BlogColor);
+        &::before{
+            @include Icons("\f5fc");
+            
+        }
+        &:hover{
+            transform: translateX(-180px);
+        }
+        span{
+            @include ContMes($BlogColor);
+            p{
+                @include Message();
+                
+            }
+        }
+    }
+    .twitter{
+        @include Button($twitterColor);
+        &::before{
+            @include Icons("\f5fc");
+        }
+        &:hover{
+            transform: translateX(-180px);
+        }
+        span{
+            @include ContMes($twitterColor); 
+            p{
+                @include Message();
+                
+            }
+        }
+    }
+    .linkedin{
+        @include Button($LinkedinColor);
+        &::before{
+            @include Icons("\f5fc");
+        }
+        &:hover{
+            transform: translateX(-180px);
+        }
+        span{
+            @include ContMes($LinkedinColor); 
+            p{
+                @include Message();
+                
+            }
+        }
+    }
+    .facebook{
+        @include Button($facebookColor);
+        &::before{
+            @include Icons("\f5fc");
+        }
+        &:hover{
+            transform: translateX(-180px);
+        }
+        span{
+            @include ContMes($facebookColor); 
+            p{
+                @include Message();
+                
+            }
+        }
+    }
+    .github{
+        @include Button($GitHubColor);
+        &::before{
+            @include Icons("\f5fc");
+        }
+        &:hover{
+            transform: translateX(-180px);
+        }
+        span{
+            @include ContMes($GitHubColor); 
+            p{
+                @include Message();
+                
+            }
+        }
+    }
+}
